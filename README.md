@@ -1,33 +1,26 @@
-Ima![](README/README0.png)gePaste
+ImagePaste
 ==========
 
-Paste image from clipboard, save the image to a file and insert the relative path on the current cursor.
+An attempt to troubleshoot issues with the original package- 
 
+⚪ Fix Proper Path Reference
 
-# Installation
+The path reference doesn't work exactly when the file name or the directory has a space in their name. In the original package, the directory and file name doesn't use spaces in their name.
 
-use package control
+# Installation (Not Recommended)
 
-## for Linux 
+Installation is not recommended at this moment. But the process is - 
 
-pip install PyUserInput, pyscreenshot 
-and install python-pyqt4 as backend of pyscreenshot
+Through Package Control:
 
-# Usage    {
-        "caption": "ImagePaste: Paste Image From Clipboard",
-        "command": "image_paste"
-    },
+`Ctrl+Shift+P` -> `Package Control: Add Repository` -> `https://github.com/anyfactor/imagepaste`
 
-Take a screenshot, then just ctrl+v to paste it. It will save a png file to current directory and insert the file path in the current cursor. 
+Then:
 
-1. When copy to markdown buffer, it will display the image path for markdown, eg: \!\[\](pic_path)
-2. When copy to other buffer, it will display only the image path pic_path at the cursor. 
-     {
-        "caption": "ImagePaste: Paste Image From Clipboard",
-        "command": "image_paste"
-    },
-![](./gif/imagepaste.gif)
-3. Preview within Sublime Text.
+`Ctrl+Shift+P` -> `Package Control: Install Package` -> `imagepaste` || Find the one with the **anyfactor** one.
 
-![](./gif/imgPreview.gif)
+More info here: [Usage - Package Control](https://packagecontrol.io/docs/usage)
 
+# Goal
+
+Make this package more like this VSCode plugin: [Paste Image](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)
